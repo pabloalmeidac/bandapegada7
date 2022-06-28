@@ -1,8 +1,11 @@
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./routes";
+
 export const App = () => {
   return (
-    <div className="App">
-      Banda Pegada 7 
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
