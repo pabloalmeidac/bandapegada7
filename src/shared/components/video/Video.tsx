@@ -14,7 +14,7 @@ export const Video: React.FC = () => {
           data-testid="video" 
         />
       </Box>
-      <Box sx={{display: { xs: 'flex', md: 'none' }, width: '90%', height: '90%', maxWidth:'1140px', mt: '1rem', mb: '2rem'}}>
+      <Box sx={{display: { xs: 'flex', md: 'none' }, width: '90%', height: '100%', maxWidth:'1140px', mt: '1rem', mb: '2rem'}}>
         <iframe 
           title="youtube-video"
           width="100%"
