@@ -1,5 +1,5 @@
 import { Box, CardMedia} from '@mui/material';
-import banda from '../../assets/banda.jpeg';
+import banda from '../../assets/banda.jpg';
 
 export const Slider: React.FC = () => {
   return (
