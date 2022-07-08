@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, MenuItem, Link, Button, Stack } from '@mui/material';
+import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, MenuItem, Link, Stack } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../../assets/logo.svg';
 import facebook from '../../assets/facebook.svg';
@@ -63,13 +63,15 @@ export const MenuApp = () => {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
-              <Button
+              <Link
                 key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                href="/"
+                fontWeight="700"
+                fontFamily="Sans-serif"
+                sx={{ m: 2, color: 'white', display: 'block' }}
               >
                 {page}
-              </Button>
+              </Link>
             ))}
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 0, mr: '1rem' }}>
