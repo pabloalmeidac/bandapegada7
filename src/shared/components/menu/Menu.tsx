@@ -8,7 +8,7 @@ import youtube from '../../assets/youtube.svg';
 
 export const MenuApp = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const pages = ['MÍDIA', 'AGENDA', 'BIOGRAFIA', 'FOTOS', 'NOVIDADES', 'CONTATO'];
+  const pages = ['MÍDIA', 'AGENDA', 'BIOGRAFIA', 'VIDEOTECA', 'FOTOS', 'NOVIDADES', 'CONTATO'];
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -19,26 +19,12 @@ export const MenuApp = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="static" >
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: 'flex',
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            <Avatar src={logo} />
-          </Typography>
+          <Link href="/" underline="none">
+            <Avatar alt="logotipo" src={logo} />
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
             <IconButton
               size="large"
@@ -75,7 +61,7 @@ export const MenuApp = () => {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -86,7 +72,7 @@ export const MenuApp = () => {
               </Button>
             ))}
           </Box>
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 0 }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 0, mr: '1rem' }}>
             <Stack direction="row" spacing={1}>
               <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
                 <Avatar alt="facebook" src={facebook} />
