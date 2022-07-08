@@ -1,10 +1,11 @@
-import { MenuApp, Slider } from '../../shared/components';
+import { MenuApp, Slider, Video } from '../../shared/components';
 
 export const Home: React.FC = () => {
   return (
     <>
       <MenuApp />
       <Slider />
+      <Video />
     </>
   );
 };
