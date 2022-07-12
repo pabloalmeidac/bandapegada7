@@ -1,5 +1,5 @@
 import { Box, CardMedia, Typography} from '@mui/material';
-import banda from '../../assets/banda.jpg';
+import show from '../../assets/show.jpg';
 
 export const Show: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ export const Show: React.FC = () => {
       <Box sx={{ width: {xs: '100%', md: '50%'}, height: {xs: '50%', md: '100%'}}}>
         <CardMedia
           component="img"
-          image={ banda }
+          image={ show }
           alt="foto da banda"
           sx={ { objectFit: 'cover', height:'100%' } }
         />
