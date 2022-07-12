@@ -6,54 +6,74 @@ import youtube from '../../assets/youtube.svg';
 export const Footer: React.FC = () => {
 
   return (
-    <Box sx={{ paddingTop: '2rem', display: 'flex', justifyContent: 'center', backgroundColor: '#303f9f', overflow: 'hidden', flexDirection: 'column'}}>
-      <Box>
+    <Box sx={
+      { 
+        paddingTop: '2rem', 
+        display: 'flex', 
+        backgroundColor: '#303f9f', 
+        overflow: 'hidden', 
+        flexDirection: {xs: 'column', md: 'row'},
+        justifyContent: 'space-evenly',
+        width: '100vw'
+      }
+    }>
+      <Box sx={
+        { 
+          display: 'flex',
+          flexDirection: {xs: 'column', md: 'column'},
+        }
+      }>
         <Typography 
           variant="h2" 
-          fontSize={22} 
+          fontSize={28} 
           fontWeight="500"
           fontFamily="Sans-serif"
+          textAlign="center"
           color="#ffffff" >
           FALE COM A GENTE
         </Typography>
         <FormControl>
           <TextField
-            sx={ { width: '50%', mb: '1rem', mt: '1rem', color: '#ffffff' } }
+            sx={ { mb: '1rem', mt: '1rem'  } }
             variant="outlined"
+            color="info"
             label="Nome"
-            size="small"
+            size="medium"
             name="nome"
           />
           <TextField
-            sx={ { width: '50%', mb: '1rem' } }
+            sx={ {  mb: '1rem' } }
             variant="outlined"
+            color="info"
             label="Email"
-            size="small"
+            size="medium"
             name="email"
           />
           <Select
             id="assunto"
-            size="small"
+            size="medium"
             label="Assunto"
             name="assunto"
+            color="info"
           >
             <MenuItem value="musicas">Musicas</MenuItem>
-            <MenuItem value="musicas">Contrato de Shows</MenuItem>
-            <MenuItem value="musicas">Imprensa</MenuItem>
-            <MenuItem value="musicas">Fã Clube</MenuItem>
+            <MenuItem value="contrato">Contrato de Shows</MenuItem>
+            <MenuItem value="imprensa">Imprensa</MenuItem>
+            <MenuItem value="club">Fã Clube</MenuItem>
           </Select>
           <TextField
-            sx={ { width: '50%', mt: '1rem', mb: '1rem' } }
+            sx={ {  mt: '1rem', mb: '1rem' } }
             variant="outlined"
             label="Mensagem"
+            color="info"
             size="medium"
             name="mensagem"
           />
         </FormControl>
-        <Box >
+        <Box textAlign='center' marginBottom='2rem'>
           <Button
             variant="contained"
-            color="inherit"
+            color="info"
             size="medium"
           >
             ENVIAR!
@@ -63,37 +83,38 @@ export const Footer: React.FC = () => {
       <Box>
         <Typography 
           variant="h2" 
-          fontSize={22} 
+          fontSize={28} 
           fontWeight="500"
           fontFamily="Sans-serif"
           color="#ffffff"
+          textAlign='center'
         >
           MATERIAL PARA CONTRATANTE
         </Typography>
-        <Box sx={ { textAlign: 'center', mt: '1rem' } }  >
+        <Box sx={ { textAlign: 'center', mt: '1rem', mb: '2rem' } }  >
           <Button
             variant="contained"
-            color="inherit"
+            color="info"
             size="medium"
           >
             DOWNLOAD
           </Button>
         </Box>
       </Box>
-      <Box>
+      <Box textAlign='center'>
         <Typography 
           variant="h2" 
-          fontSize={22} 
+          fontSize={28} 
           fontWeight="500"
           fontFamily="Sans-serif" 
-          color="#ffffff" 
+          color="#ffffff"
         >
-          Contato
+          CONTATO
         </Typography>
         <Typography 
           variant="h3" 
-          fontSize={18} 
-          fontWeight="500"
+          fontSize={22} 
+          fontWeight="300"
           fontFamily="Sans-serif" 
           color="#ffffff"
           marginTop="1rem">
@@ -101,18 +122,20 @@ export const Footer: React.FC = () => {
         </Typography>
         <Typography 
           variant="h3" 
-          fontSize={18} 
-          fontWeight="500"
+          fontSize={22} 
+          fontWeight="300"
           fontFamily="Sans-serif" 
           color="#ffffff"
-          marginTop="1rem">
+          marginTop="1rem"
+          marginBottom='2rem'
+        >
           email@email.com.br
         </Typography>
       </Box>
-      <Box>
+      <Box textAlign='center'>
         <Typography 
           variant="h2" 
-          fontSize={22} 
+          fontSize={28} 
           fontWeight="500"
           fontFamily="Sans-serif" 
           color="#ffffff"
@@ -126,7 +149,7 @@ export const Footer: React.FC = () => {
           <Link href="" underline="none">
             <Avatar alt="instagram" src={instagram} />
           </Link>
-          <Link href="https://www.youtube.com/channel/UCjIgsW7rChSLXwgCnbbXmFw" underline="none">
+          <Link href="https://www.youtube.com/channel/UCjIgsW7rChSLXwgCnbbXmFw" underline="none" marginBottom='2rem'>
             <Avatar alt="youtube" src={youtube} />
           </Link>
         </Box>

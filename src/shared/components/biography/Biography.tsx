@@ -2,7 +2,7 @@ import { Box, Typography, Container, Paper } from '@mui/material';
 
 export const Biography: React.FC = () => {
   return (
-    <Container sx={{ display: 'flex', width: '100%', alignItems: 'center', flexDirection: 'column', mt: '1rem'}}>
+    <Container sx={{ display: 'flex', width: '100vw', alignItems: 'center', flexDirection: 'column', mt: '1rem'}}>
       <Typography variant="h1" fontSize={24} fontWeight="bold" lineHeight={1.8} letterSpacing={2} >
           BIOGRAFIA
       </Typography>
