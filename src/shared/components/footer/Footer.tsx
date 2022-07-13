@@ -118,7 +118,9 @@ export const Footer: React.FC = () => {
           fontFamily="Sans-serif" 
           color="#ffffff"
           marginTop="1rem">
-          (85) 0000-0000
+          (85) 99691-0178
+          <br/><br/>
+          (85) 99753-6261
         </Typography>
         <Typography 
           variant="h3" 
@@ -146,7 +148,7 @@ export const Footer: React.FC = () => {
           <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
             <Avatar alt="facebook" src={facebook} />
           </Link>
-          <Link href="" underline="none">
+          <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
             <Avatar alt="instagram" src={instagram} />
           </Link>
           <Link href="https://www.youtube.com/channel/UCjIgsW7rChSLXwgCnbbXmFw" underline="none" marginBottom='2rem'>

@@ -79,7 +79,7 @@ export const MenuApp = () => {
               <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
                 <Avatar alt="facebook" src={facebook} />
               </Link>
-              <Link href="" underline="none">
+              <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
                 <Avatar alt="instagram" src={instagram} />
               </Link>
               <Link href="https://www.youtube.com/channel/UCjIgsW7rChSLXwgCnbbXmFw" underline="none">
