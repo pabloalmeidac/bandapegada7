@@ -23,8 +23,7 @@ export const Biography: React.FC = () => {
             original, os músicos fundadores e sócios <b>Paulo Almeida</b> (ex-Canários do Reino e Lailtinho
             Brega) e <b>Mário Lobo</b> (ex-Falcão, Waldick Soriano, Bob Araújo e Bon Jovi Cover-SP).
             <br/><br/>
-            Juntaram-se a eles o tecladista <b>Pedro Matos</b>, a cantora <b>Eva Grace</b> e recentemente o novo
-            cantor e guitarrista <b>Marcilio Façanha</b>. 
+            Juntaram-se a eles o tecladista <b>Pedro Matos</b> e a cantora <b>Eva Grace</b>.
             <br/><br/>
             A banda mantém ainda uma rede de músicos de
             apoio freelancers formado por percussionistas, violinistas, saxofonista e sanfoneiro, além de
