@@ -3,7 +3,7 @@ import show from '../../assets/show.jpg';
 
 export const Show: React.FC = () => {
   return (
-    <Box sx={{ display: 'flex', width: '100vw', height:'50%', flexDirection: {xs: 'column', md: 'row'} }}>
+    <Box id="AGENDA" sx={{ display: 'flex', width: '100vw', height:'50%', flexDirection: {xs: 'column', md: 'row'} }}>
       <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundColor: '#333', width: {xs: '100%', md: '50%'}, height: {xs: '50%', md: '100%'} }}>
         <Typography 
           variant="h2" 
