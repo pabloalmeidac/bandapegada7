@@ -4,3 +4,4 @@ export * from './video/Video';
 export * from './biography/Biography';
 export * from './footer/Footer';
 export * from './show/Show';
+export * from './insta-feed/InstaFeed';

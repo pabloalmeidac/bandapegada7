@@ -1,4 +1,4 @@
-import { MenuApp, Slider, Video, Biography, Show, Footer } from '../../shared/components';
+import { MenuApp, Slider, Video, Biography, Show, Footer, InstaFeed } from '../../shared/components';
 import { Divider } from '@mui/material';
 
 export const Home: React.FC = () => {
@@ -10,6 +10,8 @@ export const Home: React.FC = () => {
       <Video />
       <Divider />
       <Biography />
+      <Divider />
+      <InstaFeed />
       <Divider />
       <Show />
       <Footer />

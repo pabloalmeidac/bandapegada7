@@ -1,160 +1,179 @@
-import { Box, Typography, FormControl, Select, MenuItem, TextField, Button, Link, Avatar } from '@mui/material';
-import facebook from '../../assets/facebook.svg';
-import instagram from '../../assets/instagram.svg';
-import youtube from '../../assets/youtube.svg';
+import { Box, Typography, TextField, Button, Link, Avatar } from '@mui/material';
+import instagram from '../../assets/footer/instagram.svg';
+import youtube from '../../assets/footer/youtube.svg';
+import { AiFillPhone } from 'react-icons/ai';
+import { HiOutlineMail } from 'react-icons/hi';
 
 export const Footer: React.FC = () => {
-
   return (
-    <Box sx={
-      { 
-        paddingTop: '2rem', 
-        display: 'flex', 
-        backgroundColor: '#303f9f', 
-        overflow: 'hidden', 
-        flexDirection: {xs: 'column', md: 'row'},
-        justifyContent: 'space-evenly',
-        width: '100vw'
-      }
-    }>
+    <Box>
       <Box sx={
         { 
-          display: 'flex',
-          flexDirection: {xs: 'column', md: 'column'},
+          paddingTop: '2rem', 
+          display: 'flex', 
+          backgroundColor: '#1d1513', 
+          overflow: 'hidden', 
+          flexDirection: {xs: 'column', md: 'row'},
+          justifyContent: 'space-evenly',
+          width: '100vw'
         }
       }>
-        <Typography 
-          variant="h2" 
-          fontSize={28} 
-          fontWeight="500"
-          fontFamily="Sans-serif"
-          textAlign="center"
-          color="#ffffff" >
+        <Box sx={
+          { 
+            display: 'flex',
+            flexDirection: {xs: 'column', md: 'column'},
+          }
+        }>
+          <Typography 
+            variant="h2" 
+            fontSize={28} 
+            fontWeight="500"
+            fontFamily="Sans-serif"
+            textAlign="center"
+            color="#ffffff" >
           FALE COM A GENTE
-        </Typography>
-        <FormControl>
-          <TextField
-            sx={ { mb: '1rem', mt: '1rem'  } }
-            variant="outlined"
-            color="info"
-            label="Nome"
-            size="medium"
-            name="nome"
-          />
-          <TextField
-            sx={ {  mb: '1rem' } }
-            variant="outlined"
-            color="info"
-            label="Email"
-            size="medium"
-            name="email"
-          />
-          <Select
-            id="assunto"
-            size="medium"
-            label="Assunto"
-            name="assunto"
-            color="info"
+          </Typography>
+          <form
+            target="_blank"
+            action="https://formsubmit.co/pabloalmeidac@hotmail.com" 
+            method="POST"
           >
-            <MenuItem value="musicas">Musicas</MenuItem>
-            <MenuItem value="contrato">Contrato de Shows</MenuItem>
-            <MenuItem value="imprensa">Imprensa</MenuItem>
-            <MenuItem value="club">Fã Clube</MenuItem>
-          </Select>
-          <TextField
-            sx={ {  mt: '1rem', mb: '1rem' } }
-            variant="outlined"
-            label="Mensagem"
-            color="info"
-            size="medium"
-            name="mensagem"
-          />
-        </FormControl>
-        <Box textAlign='center' marginBottom='2rem'>
-          <Button
-            variant="contained"
-            color="info"
-            size="medium"
-          >
-            ENVIAR!
-          </Button>
+            <Box sx={{ display: 'flex', flexDirection: 'column'}}>
+              <TextField
+                sx={ { mb: '1rem', mt: '1rem', backgroundColor: 'white'  } }
+                variant="filled"
+                label="Nome"
+                size="medium"
+                name="name"
+              />
+              <TextField
+                sx={ {  mb: '1rem', backgroundColor: 'white' } }
+                variant="filled"
+                label="Email"
+                size="medium"
+                name="email"
+              />
+              <TextField
+                sx={ { mb: '1rem',  backgroundColor: 'white' } }
+                variant="filled"
+                label="Assunto"
+                size="medium"
+                name="subject"
+              />
+              <TextField
+                sx={ { mb: '1rem',  backgroundColor: 'white', color:'black' } }
+                variant="filled"
+                label="Mensagem"
+                size="medium"
+                name="message"
+                multiline
+              />
+            </Box>
+            <Box textAlign='center' marginBottom='2rem'>
+              <Button
+                variant="contained"
+                size="medium"
+                type="submit"
+                sx={{ marginBottom: '2rem', backgroundColor: '#9e3838'}}
+              >
+              ENVIAR!
+              </Button>
+            </Box>
+          </form>
         </Box>
-      </Box>
-      <Box>
-        <Typography 
-          variant="h2" 
-          fontSize={28} 
-          fontWeight="500"
-          fontFamily="Sans-serif"
-          color="#ffffff"
-          textAlign='center'
-        >
+        <Box>
+          <Typography 
+            variant="h2" 
+            fontSize={28} 
+            fontWeight="500"
+            fontFamily="Sans-serif"
+            color="#ffffff"
+            textAlign='center'
+          >
           MATERIAL PARA CONTRATANTE
-        </Typography>
-        <Box sx={ { textAlign: 'center', mt: '1rem', mb: '2rem' } }  >
-          <Button
-            variant="contained"
-            color="info"
-            size="medium"
-          >
+          </Typography>
+          <Box sx={ { textAlign: 'center', mt: '1rem', mb: '2rem' } }  >
+            <Button
+              variant="contained"
+              sx={{ backgroundColor: '#9e3838'}}
+
+              size="medium"
+            >
             DOWNLOAD
-          </Button>
+            </Button>
+          </Box>
         </Box>
-      </Box>
-      <Box textAlign='center'>
-        <Typography 
-          variant="h2" 
-          fontSize={28} 
-          fontWeight="500"
-          fontFamily="Sans-serif" 
-          color="#ffffff"
-        >
+        <Box textAlign='center' id="CONTATO" >
+          <Typography 
+            variant="h2" 
+            fontSize={28} 
+            fontWeight="500"
+            fontFamily="Sans-serif" 
+            color="#ffffff"
+          >
           CONTATO
-        </Typography>
-        <Typography 
-          variant="h3" 
-          fontSize={22} 
-          fontWeight="300"
-          fontFamily="Sans-serif" 
-          color="#ffffff"
-          marginTop="1rem">
-          (85) 99691-0178
-          <br/><br/>
-          (85) 99753-6261
-        </Typography>
-        <Typography 
-          variant="h3" 
-          fontSize={22} 
-          fontWeight="300"
-          fontFamily="Sans-serif" 
-          color="#ffffff"
-          marginTop="1rem"
-          marginBottom='2rem'
-        >
-          email@email.com.br
-        </Typography>
-      </Box>
-      <Box textAlign='center'>
-        <Typography 
-          variant="h2" 
-          fontSize={28} 
-          fontWeight="500"
-          fontFamily="Sans-serif" 
-          color="#ffffff"
-        >
-          Midias Sociais
-        </Typography>
-        <Box display="flex" flexDirection="row" justifyContent="center" marginTop="1rem">
-          <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
-            <Avatar alt="facebook" src={facebook} />
-          </Link>
-          <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
-            <Avatar alt="instagram" src={instagram} />
-          </Link>
-          <Link href="https://www.youtube.com/channel/UCjIgsW7rChSLXwgCnbbXmFw" underline="none" marginBottom='2rem'>
-            <Avatar alt="youtube" src={youtube} />
+          </Typography>
+          <Typography 
+            variant="h3" 
+            fontSize={22} 
+            fontWeight="300"
+            fontFamily="Sans-serif" 
+            color="#ffffff"
+            marginTop="1rem">
+            <AiFillPhone /> (85) 99691-0178
+            <br/><br/>
+            <AiFillPhone /> (85) 99753-6261
+            <br/><br/>
+            <HiOutlineMail /> email@email.com.br
+            <br/><br/>
+          </Typography>
+          <Link href="https://linktr.ee/bandapegada7" underline="none" target="_blank" >
+            <Button
+              variant="contained"
+              size="medium"
+              sx={ {  mb: '2rem', backgroundColor: '#9e3838' } }
+            >
+            Fale conosco
+            </Button>
           </Link>
         </Box>
+        <Box textAlign='center'>
+          <Typography 
+            variant="h2" 
+            fontSize={28} 
+            fontWeight="500"
+            fontFamily="Sans-serif" 
+            color="#ffffff"
+          >
+          Midias Sociais
+          </Typography>
+          <Box display="flex" flexDirection="row" justifyContent="center" marginTop="1rem">
+            <Link href="https://www.instagram.com/bandapegada7oficial/" underline="none">
+              <Avatar alt="instagram" src={instagram} />
+            </Link>
+            <Link href="https://www.youtube.com/channel/UCjIgsW7rChSLXwgCnbbXmFw" underline="none" marginBottom='2rem'>
+              <Avatar alt="youtube" src={youtube} />
+            </Link>
+          </Box>
+        </Box>
+      
+      </Box>
+      <Box textAlign='center' sx={{ padding: '10px 0 10px 0'}}>
+        <Link 
+          href="https://pabloalmeidac.github.io/"
+          underline="none"
+          target="_blank"
+        >
+          <Typography
+            fontSize={14} 
+            fontWeight="600"
+            fontStyle="italic"
+            fontFamily="Poppins" 
+            color="#31271e"
+          >
+          Desenvolvido com carinho por Pablo Almeida
+          </Typography>
+        </Link>
       </Box>
     </Box>
   );
