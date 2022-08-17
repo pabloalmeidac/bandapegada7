@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 
 export const Video: React.FC = () => {
   return (
-    <Box sx={{ display: 'flex', width: '100vw', alignItems: 'center', flexDirection: 'column', mt: '2rem', overflow: 'hidden'}}>
+    <Box id="VIDEOTECA" sx={{ display: 'flex', width: '100vw', alignItems: 'center', flexDirection: 'column', mt: '2rem', overflow: 'hidden'}}>
       <Typography variant="h1" fontSize={24} fontWeight="bold" lineHeight={1.8} letterSpacing={2} >
         VIDEOTECA
       </Typography>
