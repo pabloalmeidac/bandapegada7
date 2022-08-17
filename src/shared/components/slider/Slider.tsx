@@ -3,7 +3,7 @@ import banda from '../../assets/banda.jpg';
 
 export const Slider: React.FC = () => {
   return (
-    <Box sx={{ width: '100%', objectFit: 'cover', overflow: 'hidden' }}>
+    <Box sx={{ marginTop:'4rem', width: '100%', objectFit: 'cover', overflow: 'hidden' }}>
       <CardMedia
         component="img"
         image={ banda }
