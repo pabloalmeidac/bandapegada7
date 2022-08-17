@@ -1,1 +1,1 @@
-export { };
+export * from './Insta-feed/InstaFeed';
