@@ -3,8 +3,19 @@ import instagram from '../../assets/footer/instagram.svg';
 import youtube from '../../assets/footer/youtube.svg';
 import { AiFillPhone } from 'react-icons/ai';
 import { HiOutlineMail } from 'react-icons/hi';
+import { useState } from 'react';
 
-export const Footer: React.FC = () => {
+export const FooterGrobens: React.FC = () => {
+  const [message, SetMessage] = useState({ name: '', email: '', subject: '', message: '' });
+
+  interface ITarget {
+    target: { name: string, value: string}
+  }
+
+  const handleChange = ({ target: { name, value } }: ITarget) => {
+    SetMessage((prevState) => ({ ...prevState, [name]: value }));
+  };
+
   return (
     <Box>
       <Box sx={
@@ -45,6 +56,7 @@ export const Footer: React.FC = () => {
                 label="Nome"
                 size="medium"
                 name="name"
+                onChange={ (e) => handleChange(e) }
               />
               <TextField
                 sx={ {  mb: '1rem', backgroundColor: 'white' } }
@@ -52,6 +64,7 @@ export const Footer: React.FC = () => {
                 label="Email"
                 size="medium"
                 name="email"
+                onChange={ (e) => handleChange(e) }
               />
               <TextField
                 sx={ { mb: '1rem',  backgroundColor: 'white' } }
@@ -59,6 +72,7 @@ export const Footer: React.FC = () => {
                 label="Assunto"
                 size="medium"
                 name="subject"
+                onChange={ (e) => handleChange(e) }
               />
               <TextField
                 sx={ { mb: '1rem',  backgroundColor: 'white', color:'black' } }
@@ -66,6 +80,7 @@ export const Footer: React.FC = () => {
                 label="Mensagem"
                 size="medium"
                 name="message"
+                onChange={ (e) => handleChange(e) }
                 multiline
               />
             </Box>
@@ -124,7 +139,7 @@ export const Footer: React.FC = () => {
             <br/><br/>
             <AiFillPhone /> (85) 99753-6261
             <br/><br/>
-            <HiOutlineMail /> assessoria@bandapegada7.com.br
+            <HiOutlineMail /> email@email.com.br
             <br/><br/>
           </Typography>
           <Link href="https://linktr.ee/bandapegada7" underline="none" target="_blank" >
