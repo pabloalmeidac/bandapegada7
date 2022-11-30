@@ -22,7 +22,7 @@ export const InstaFeed: React.FC = () => {
   }, []);
 
   return (
-    <Box sx={{ display: 'flex-block', width: '100vw', height:'70vh' }}>
+    <Box sx={{ display: 'flex-block', width: '100vw', height:'70vh' }} id='FOTOS'>
       <Typography variant="h1" fontSize={24} fontWeight="bold" lineHeight={1.8} letterSpacing={2} textAlign="center" >
           Estamos no instagram
       </Typography>
