@@ -19,6 +19,7 @@ export const Carousel: React.FC<IMyProps> = ( props : IMyProps) => {
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
+    return null;
   };
 
   const prevSlide = () => {
@@ -41,15 +42,7 @@ export const Carousel: React.FC<IMyProps> = ( props : IMyProps) => {
               <img src={ item.media_url } alt="foto instagram"/>
               <a href={item.permalink} target="_blank" rel="noreferrer"> Ver postagem </a>
             </Fragment>
-          ): item.media_type === 'VIDEO' && index === current ?(
-            <Fragment key={index}>
-              <iframe 
-                title="instagram-video"
-                src={ item.media_url }
-              />
-              <a href={item.permalink} target="_blank" rel="noreferrer"> Ver postagem </a>
-            </Fragment>
-          ) : null
+          ): item.media_type === 'VIDEO' && index === current  ? nextSlide() : ''
         ))}
       </div>
       <div className='container-right'>

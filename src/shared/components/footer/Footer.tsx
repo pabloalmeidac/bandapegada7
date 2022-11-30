@@ -81,28 +81,6 @@ export const Footer: React.FC = () => {
             </Box>
           </form>
         </Box>
-        <Box>
-          <Typography 
-            variant="h2" 
-            fontSize={28} 
-            fontWeight="500"
-            fontFamily="Sans-serif"
-            color="#ffffff"
-            textAlign='center'
-          >
-          MATERIAL PARA CONTRATANTE
-          </Typography>
-          <Box sx={ { textAlign: 'center', mt: '1rem', mb: '2rem' } }  >
-            <Button
-              variant="contained"
-              sx={{ backgroundColor: '#9e3838'}}
-
-              size="medium"
-            >
-            DOWNLOAD
-            </Button>
-          </Box>
-        </Box>
         <Box textAlign='center' id="CONTATO" >
           <Typography 
             variant="h2" 
