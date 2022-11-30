@@ -6,7 +6,6 @@ export const Home: React.FC = () => {
     <>
       <MenuApp />
       <Slider />
-      <Divider />
       <Video />
       <Divider />
       <Biography />
