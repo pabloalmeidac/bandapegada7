@@ -10,8 +10,8 @@ export const Home: React.FC = () => {
       <Divider />
       <Biography />
       <Divider />
-      <InstaFeed />
-      <Divider />
+      {/*<InstaFeed /> */}
+      {/*<Divider />*/}
       <Show />
       <Footer />
     </>
