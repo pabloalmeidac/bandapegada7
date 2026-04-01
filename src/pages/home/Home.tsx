@@ -1,5 +1,19 @@
-import { MenuApp, Slider, Video, Biography, Show, InstaFeed, Footer } from '../../shared/components';
-import { Divider } from '@mui/material';
+import { MenuApp, Slider, Video, Biography, Show, Footer } from '../../shared/components';
+import { Box } from '@mui/material';
+
+const SectionRule = () => (
+  <Box
+    aria-hidden
+    sx={{
+      height: 1,
+      maxWidth: 120,
+      mx: 'auto',
+      my: { xs: 0, md: 1 },
+      bgcolor: 'divider',
+      borderRadius: 1,
+    }}
+  />
+);
 
 export const Home: React.FC = () => {
   return (
@@ -7,11 +21,9 @@ export const Home: React.FC = () => {
       <MenuApp />
       <Slider />
       <Video />
-      <Divider />
+      <SectionRule />
       <Biography />
-      <Divider />
-      {/*<InstaFeed /> */}
-      {/*<Divider />*/}
+      <SectionRule />
       <Show />
       <Footer />
     </>
